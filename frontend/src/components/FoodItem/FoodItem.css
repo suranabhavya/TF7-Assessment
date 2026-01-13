@@ -9,7 +9,16 @@
 
 .food-item-image{
     width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 15px 15px 0px 0px;
+    transition: transform 0.3s ease;
+    display: block;
+    background-color: #f0f0f0;
+}
+
+.food-item-img-container:hover .food-item-image{
+    transform: scale(1.1);
 }
 
 .food-item-info{
@@ -46,6 +55,8 @@
 
 .food-item-img-container{
     position: relative;
+    overflow: hidden;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .food-item-img-container .add{
